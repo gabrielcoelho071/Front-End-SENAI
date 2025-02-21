@@ -1,0 +1,13 @@
+.icone-verde, .icone-roxo, .icone-azul {
+    color: white;
+}
+
+.icone-verde:hover {
+    color: lightgreen;
+}
+.icone-roxo:hover {
+    color: #fa247a;
+}
+.icone-azul:hover {
+    color: #1e46e4;
+}
