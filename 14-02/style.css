@@ -11,3 +11,12 @@
 .icone-azul:hover {
     color: #1e46e4;
 }
+
+.image_logo {
+    width: 80px;
+    transition: filter 1.2s; /* Transição suave */
+}
+
+.image_logo:hover {
+    filter: invert(10%) sepia(100%) saturate(500%) hue-rotate(180deg); /* Altera a cor da imagem */
+}
