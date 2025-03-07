@@ -29,53 +29,54 @@
     </nav>
 </header>
 <main>
-    <div class="container my-5">
+    <div class="container my-5 w-50">
         <form>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Endereço de Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1">
+            <div class="d-flex form-row justify-content-between">
+                <div class="form-group col-md-5 my-3">
+                    <label for="inputEmail4" id="labelEmail" onclick="addText('inputEmail4', 'Email')">Email</label>
+                    <input type="email" onfocus="labelColor('labelEmail')" onfocusout="labelColorReset('labelEmail')" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6 my-3">
+                    <label for="inputPassword4" class="my-1" id="labelPassword" onclick="addText('inputPassword4', 'Senha')">Senha</label>
+                    <input type="password" onfocus="labelColor('labelPassword')" onfocusout="labelColorReset('labelPassword')" class="form-control" id="inputPassword4" placeholder="Senha">
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                <input type="email" class="form-control" id="exampleFormControlInput2">
+            <div class="form-group">
+                <label for="inputAddress" id="labelAddress" onclick="addText('inputAddress','Endereço')">Endereço</label>
+                <input type="text" onfocus="labelColor('labelAddress')" onfocusout="labelColorReset('labelAddress')" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Sobrenome</label>
-                <input type="email" class="form-control" id="exampleFormControlInput3">
+            <div class="form-group my-3">
+                <label for="inputAddress2" id="labelAddress2" onclick="addText('inputAddress2','Endereço 2')">Endereço 2</label>
+                <input type="text" onfocus="labelColor('labelAddress2')" onfocusout="labelColorReset('labelAddress2')" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Descrição</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div class="d-flex form-row justify-content-between">
+                <div class="form-group col-md-5">
+                    <label for="inputCity" id="labelCity" class="my-1" onclick="addText('inputCity', 'Cidade')">Cidade</label>
+                    <input type="text" onfocus="labelColor('labelCity')" onfocusout="labelColorReset('labelCity')" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputEstado" class="my-1" id="labelEstado">Estado</label>
+                    <select id="inputEstado" onfocus="labelColor('labelEstado')" onfocusout="labelColorReset('labelEstado')" class="form-control">
+                        <option selected>Escolher...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputCEP" class="my-1" id="labelCEP" onclick="addText('inputCEP','CEP')">CEP</label>
+                    <input type="text" onfocus="labelColor('labelCEP')" onfocusout="labelColorReset('labelCEP')" class="form-control" id="inputCEP">
+                </div>
             </div>
-            <!--senha-->
-            <div class="row g-3 align-items-center mb-3">
-                <div class="col-auto">
-                    <label for="inputPassword6" class="col-form-label">Senha</label>
+            <div class="form-group my-4">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label my-1" for="gridCheck">
+                        Clique em mim
+                    </label>
                 </div>
-                <div class="col-auto">
-                    <input type="password" id="inputPassword6" class="form-control"
-                           aria-describedby="passwordHelpInline">
-                </div>
-                <div class="col-auto">
-    <span id="passwordHelpInline" class="form-text">
-      Precisa ter de 8-20 caracteres no minimo.
-    </span>
-                </div>
-                <!--comfirmar senha-->
             </div>
-            <div class="row g-3 align-items-center">
-                <div class="col-auto">
-                    <label for="inputPassword6" class="col-form-label">Comfirmar Senha</label>
-                </div>
-                <div class="col-auto">
-                    <input type="password" id="inputPassword7" class="form-control"
-                           aria-describedby="passwordHelpInline">
-                </div>
-                <div class="col-auto">
-    <span id="passwordHelpInline1" class="form-text">
-      Precisa ter de 8-20 caracteres no minimo.
-    </span>
-                </div>
+            <div class="d-flex form-row my-5">
+                <button id="confirm" type="submit" class="btn btn-primary px-4 me-3">Entrar</button>
+                <div id="cancel" onmousedown="limpaInput()" class="btn btn-dark px-4">Cancelar</div>
             </div>
         </form>
     </div>
@@ -89,5 +90,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+<script src="../static/script.js"></script>
 </body>
 </html>

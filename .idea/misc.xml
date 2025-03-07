@@ -3,4 +3,7 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.12 (Front-End-SENAI)" />
   </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="FLOW" />
+  </component>
 </project>
