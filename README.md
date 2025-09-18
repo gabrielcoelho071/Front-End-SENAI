@@ -68,9 +68,13 @@ UX aplicada: Adição de paginação, para o usuário poder se guiar entre os pr
 
 UI aplicada: Estilo de cards com sombra e destaque no preço. 
 
+Antes:
 
+<img width="666" height="652" alt="Captura de tela 2025-09-18 125708" src="https://github.com/user-attachments/assets/df07ddab-0ed3-4abe-81ea-3d90d2bd1470" />
 
+Depois:
  
+<img width="1526" height="884" alt="Captura de tela 2025-09-18 102606" src="https://github.com/user-attachments/assets/6494cc15-8386-48b6-8d26-a992f4739b90" />
 
  
 
